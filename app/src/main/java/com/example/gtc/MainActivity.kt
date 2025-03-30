@@ -20,12 +20,6 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        Handler(Looper.getMainLooper()).postDelayed({
-            startActivity(Intent(this, Login::class.java))
-        }, 2000)
-
-        val controller = WindowInsetsControllerCompat(window, window.decorView)
-        controller.hide(WindowInsetsCompat.Type.statusBars())
 
     }
 }
